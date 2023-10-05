@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            margin: auto;
+        }
+        button{
+            font-size: 40px;
+        }
+        .no{
+            position: relative;
+            top: 100px;
+            left: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        你喜欢学习吗
+    </h1>
+
+        <button>喜欢</button>
+        <button class="no"> 不喜欢</button>
+    <script>
+        let no= document.querySelector('.no');
+        no.onmouseover=function(){
+            let t=Math.random()*500;
+            let l=Math.random()*500;
+            console.log(l)
+            no.style.top=t+"px";
+            no.style.left=l+"px";
+        }
+    </script>
+</body>
+</html>
